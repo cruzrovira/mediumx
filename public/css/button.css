@@ -1,0 +1,40 @@
+.btn {
+    padding: .8em 1.6em;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background: #ccc;
+    color: #333;
+}
+.btn--round{
+    border-radius: 4px;
+}
+.btn:hover {
+    text-decoration: underline;
+}
+
+.btn:active {
+    transform: scale(0.8);
+}
+
+.btn--primary {
+    background: #007bdf;
+    color: #fff;
+}
+
+.btn--full {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.btn--secundary {
+    background: #fba905;
+    color: #fff;
+}
+
+.btn--alert {
+    background: #ff3c32;
+    color: #fff;
+}

@@ -1,0 +1,16 @@
+.control{
+    outline: none;
+    border: 1px solid;
+    border-left-color: #eee;
+    border-top-color: #eee;
+    border-right-color: #ccc;
+    border-bottom-color: #ccc;
+    
+}
+
+.control-round{
+    border-radius: 4px;
+}
+.control-box{
+    line-height: 1.5em;
+}
