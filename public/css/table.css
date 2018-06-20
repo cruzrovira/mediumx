@@ -1,0 +1,19 @@
+table{
+    max-width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+td,th{
+    padding: 4px;
+}
+thead th{
+    border-bottom: 1px solid #ccc;
+}
+tbody tr:nth-child(2n+1){
+    background: #f1f1f1;
+}
+tbody tr:not(:last-child){
+    border-bottom: 1px solid #ccc;
+}

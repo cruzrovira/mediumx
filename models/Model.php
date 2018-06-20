@@ -23,14 +23,17 @@ abstract class Model
 
    // consultas a la base de datos : INSERT, UPDATE, DELETE
    protected function set_query(){
+      
        $this->db_open();
        $this->conn->query($this->query);
        $this->db_close();
+     
    }
 
    // para consultas de tipo: SELECT 
 
     protected function get_query(){
+    
         $this->db_open();
         $result = $this->conn->query($this->query);
         while($this->rows[] =$result->fetch_assoc());
@@ -38,6 +41,7 @@ abstract class Model
         $result->close();
         $this->db_close();
         return $this->rows;
+
     }
     
     abstract protected function set();

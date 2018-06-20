@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-05-2018 a las 03:16:30
+-- Tiempo de generación: 30-04-2018 a las 07:09:15
 -- Versión del servidor: 10.1.28-MariaDB
 -- Versión de PHP: 7.0.25
 
@@ -48,11 +48,6 @@ CREATE TABLE `publication` (
   `id_user` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
---
--- Volcado de datos para la tabla `publication`
---
-
-
 -- --------------------------------------------------------
 
 --
@@ -63,12 +58,6 @@ CREATE TABLE `role` (
   `id_role` int(20) NOT NULL,
   `role` varchar(80) COLLATE utf8mb4_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
-
---
--- Volcado de datos para la tabla `role`
---
-
-
 
 -- --------------------------------------------------------
 
@@ -83,8 +72,6 @@ CREATE TABLE `user` (
   `img` varchar(255) COLLATE utf8mb4_spanish_ci NOT NULL,
   `id_role` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
-
-
 
 --
 -- Índices para tablas volcadas
@@ -140,8 +127,6 @@ ALTER TABLE `role`
 ALTER TABLE `user`
   MODIFY `id_user` int(20) NOT NULL AUTO_INCREMENT;
 
-ALTER TABLE `publication`
-  MODIFY `id_publication` int(20) NOT NULL AUTO_INCREMENT;
 --
 -- Restricciones para tablas volcadas
 --
